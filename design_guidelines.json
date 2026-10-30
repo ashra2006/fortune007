@@ -1,0 +1,105 @@
+{
+  "project_name": "Fortune 007",
+  "app_type": "saas_dashboard_operating_suite",
+  "persona_and_vibe": {
+    "archetype": "High-Performance Executive Tactical OS",
+    "theme": "Dark / Obsidian Command Center with Amber/Gold & Emerald Precision Accents",
+    "tone": "Subtle luxury, intense focus, stealth wealth, high intelligence, institutional power",
+    "vibe_description": "Fortune 007 combines the sleek tactical feel of an executive flight deck with intelligence tools. Dark slate/obsidian backdrop (#090D16, #0F172A), sharp 1px hairline glass borders, glowing indicator dots, gold/emerald accents for key financial and operational metrics."
+  },
+  "typography": {
+    "heading_font": "Syne / Plus Jakarta Sans",
+    "body_font": "Plus Jakarta Sans",
+    "mono_font": "JetBrains Mono / Fira Code",
+    "h1_style": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-slate-100",
+    "h2_style": "text-2xl sm:text-3xl font-bold tracking-tight text-slate-100",
+    "h3_style": "text-xl sm:text-2xl font-semibold text-slate-200",
+    "body_style": "text-sm sm:text-base leading-relaxed text-slate-300",
+    "mono_metric_style": "font-mono tracking-wider font-semibold text-amber-400"
+  },
+  "color_palette": {
+    "background_base": "bg-[#080B11]",
+    "surface_card": "bg-[#0F1523]/80 backdrop-blur-md border border-slate-800/80 shadow-xl",
+    "surface_elevated": "bg-[#161F33] border border-slate-700/60 shadow-2xl",
+    "primary_accent": "bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold",
+    "secondary_accent": "bg-emerald-600 hover:bg-emerald-500 text-white font-medium",
+    "text_primary": "text-slate-100",
+    "text_secondary": "text-slate-400",
+    "text_muted": "text-slate-500",
+    "status_emerald": "#10B981",
+    "status_amber": "#F59E0B",
+    "status_rose": "#F43F5E",
+    "status_cyan": "#06B6D4"
+  },
+  "layout_and_pillars": {
+    "grid_system": "High Density Responsive Grid: grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 for Pillar tiles; side-by-side workspace layout with 280px left tool panel, main canvas flex-1, and 360px collapsible AI chat sidebar.",
+    "pillars": [
+      {
+        "id": "venture_radar",
+        "name": "VentureRadar",
+        "tagline": "Idea Notepad & AI Feasibility Engine",
+        "badge": "Strategy & Ideation",
+        "accent_color": "text-amber-400 border-amber-500/30"
+      },
+      {
+        "id": "capital_flow",
+        "name": "CapitalFlow",
+        "tagline": "Funding Pipeline & Investor CRM",
+        "badge": "Capital Ops",
+        "accent_color": "text-emerald-400 border-emerald-500/30"
+      },
+      {
+        "id": "talent_forge",
+        "name": "TalentForge",
+        "tagline": "Candidate Pipeline & AI Outreach Composer",
+        "badge": "Talent Acquisition",
+        "accent_color": "text-cyan-400 border-cyan-500/30"
+      },
+      {
+        "id": "tax_desk",
+        "name": "TaxDesk",
+        "tagline": "GST Intelligence, Invoice AI & PDF Exporter",
+        "badge": "Tax & Compliance",
+        "accent_color": "text-purple-400 border-purple-500/30"
+      },
+      {
+        "id": "market_pulse",
+        "name": "MarketPulse",
+        "tagline": "Real-time Business News & Market Signal Radar",
+        "badge": "Market Intelligence",
+        "accent_color": "text-rose-400 border-rose-500/30"
+      },
+      {
+        "id": "strategy_lab",
+        "name": "StrategyLab",
+        "tagline": "Boardroom AI Advisor & Scenario Planner",
+        "badge": "Executive AI",
+        "accent_color": "text-blue-400 border-blue-500/30"
+      }
+    ]
+  },
+  "component_guidelines": {
+    "header_nav": "Fixed glassmorphic command header with blurred dark backdrop (bg-[#080B11]/90 backdrop-blur-xl), z-50, displaying logo badge 'FORTUNE 007', pillar quick switcher, admin toggle, and user profile drawer.",
+    "pillar_tile": "Bento-style visual card with glowing hover stroke, status indicator dot, key metrics counter, quick launch button, and data-testid attributes.",
+    "pillar_workspace": "Split view containing tool workspace (60-70% width) and dedicated AI chat side panel (30-40% width) tailored to that specific pillar context.",
+    "admin_console": "Dedicated full-screen modal or view with tabs for AI Settings (Gemini API key & model), TinyFish Research settings (base URL & API key), User Directory table, and Suite Telemetry stats.",
+    "gst_calculator": "Interactive inputs for taxable value, CGST/SGST/IGST breakdown, inclusive/exclusive radio toggle, AI invoice extraction trigger, and crisp PDF generator export button.",
+    "email_composer": "AI template generator + real email dispatch interface (with SMTP API / email trigger simulation & real toast alert).",
+    "toast": "Use Sonner from /app/frontend/src/components/ui/sonner.jsx for high-visibility dark alerts."
+  },
+  "media_assets": {
+    "hero_chart_bg": "https://images.unsplash.com/photo-1586448317606-cb1ec00298fc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHw0fHx0ZWNoJTIwZm91bmRlciUyMGV4ZWN1dGl2ZSUyMHBvcnRyYWl0JTIwZmluYW5jZSUyMGdyb3d0aCUyMGNoYXJ0fGVufDB8fHx8MTc5MzI2OTMzMnww&ixlib=rb-4.1.0&q=85",
+    "executive_workspace": "https://images.unsplash.com/photo-1731327328382-12b8e9e43733?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwxfHxleGVjdXRpdmUlMjBmb3VuZGVyJTIwd29ya3NwYWNlJTIwc3RhcnR1cCUyMG9mZmljZSUyMGFic3RyYWN0JTIwdGVjaG5vbG9neXxlbnwwfHx8fDE3OTMyNjkzMzN8MA&ixlib=rb-4.1.0&q=85",
+    "investor_growth": "https://images.unsplash.com/photo-1579226905180-636b76d96082?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHx0ZWNoJTIwZm91bmRlciUyMGV4ZWN1dGl2ZSUyMHBvcnRyYWl0JTIwZmluYW5jZSUyMGdyb3d0aCUyMGNoYXJ0fGVufDB8fHx8MTc5MzI2OTMzMnww&ixlib=rb-4.1.0&q=85"
+  },
+  "testing_requirements": {
+    "data_testid_rule": "ALL interactive components, inputs, buttons, tables, pillar links, modal triggers, and key stats MUST have data-testid in kebab-case format. E.g. data-testid='venture-radar-card', data-testid='admin-login-button', data-testid='gst-calculate-btn', data-testid='ai-chat-input'."
+  },
+  "instructions_to_main_agent": [
+    "Ensure all components use .jsx / .js format as existing in frontend codebase.",
+    "Implement Firebase auth flow with fallback mock auth and admin passcode 1111/1111 for rapid testing.",
+    "Store Gemini and TinyFish config in persistent local state / backend config.",
+    "Ensure seamless responsive behavior on tablet and desktop.",
+    "Provide crisp feedback with Sonner toast on email sending, PDF downloads, invoice extractions, and AI chat responses."
+  ]
+}
